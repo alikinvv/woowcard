@@ -389,13 +389,13 @@ a {
 }
 
 .slick-dots {
-	@include fcc;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 
 	li {
 		flex-shrink: 0;
+		display: inline-block;
 	}
 
 	.slick-active button {
@@ -1797,7 +1797,7 @@ a {
 				@include r(767) {
 					opacity: .2;
 				}
-				
+
 				opacity: 0.5;
 			}
 

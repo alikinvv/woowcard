@@ -776,13 +776,19 @@ a {
 			}
 		}
 
-		.breadcrumbs a {
-			&:hover::before {
-				color: #fff;
+		.breadcrumbs {
+			@include r(767) {
+				margin-bottom: -41px;
 			}
 
-			&::before {
-				color: #fff;
+			a {
+				&:hover::before {
+					color: #fff;
+				}
+	
+				&::before {
+					color: #fff;
+				}
 			}
 		}
 	}

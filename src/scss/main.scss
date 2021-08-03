@@ -464,6 +464,10 @@ a {
 				pointer-events: all;
 				user-select: initial;
 			}
+
+			.submenu {
+				display: block;
+			}
 		}
 
 		@include fcc;
@@ -662,6 +666,7 @@ a {
 	@include r(767) {
 		margin-top: 20px;
 		padding-top: 20px;
+		display: none;
 	}
 
 	background: $grey;

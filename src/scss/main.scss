@@ -329,7 +329,7 @@ a {
 	border-radius: 9px;
 	font-size: 16px;
 	line-height: 1;
-	padding: 7px 25px 10px;
+	padding: 10px 25px;
 
 	&:focus {
 		outline: none;
@@ -393,6 +393,10 @@ a {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+
+	li {
+		flex-shrink: 0;
+	}
 
 	.slick-active button {
 		background: #fff;
@@ -688,7 +692,7 @@ a {
 				font-size: 18px;
 			}
 
-			padding: 9px 0 12px;
+			padding: 12px 0;
 			width: 16.666%;
 			color: #fff;
 			transition: $trans;
@@ -894,7 +898,7 @@ a {
 
 			font-size: 24px;
 			margin-top: 47px;
-			padding: 12px 28px 15px;
+			padding: 15px 28px;
 		}
 	}
 
@@ -942,7 +946,7 @@ a {
 
 		& + .btn {
 			margin-top: 40px;
-			padding: 11px 25px 14px;
+			padding: 14px 25px;
 		}
 	}
 
@@ -1115,6 +1119,11 @@ a {
 	}
 
 	&__img {
+		@include r(767) {
+			width: 100%;
+			height: auto;
+		}
+
 		border-radius: 10px;
 		box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
 		margin-bottom: 20px;
@@ -1166,7 +1175,7 @@ a {
 		bottom: 0;
 		left: 0;
 		right: 0;
-		padding: 20px 20px;
+		padding: 20px;
 		opacity: 0;
 		pointer-events: none;
 		user-select: none;
@@ -1293,7 +1302,7 @@ a {
 	.btn {
 		margin-right: 15px;
 		font-size: 20px;
-		padding: 8px 25px 12px;
+		padding: 12px 25px;
 	}
 }
 
@@ -1378,7 +1387,7 @@ a {
 		.btn {
 			font-size: 20px;
 			margin-left: 10px;
-			padding: 8px 25px 12px;
+			padding: 12px 25px;
 		}
 	}
 
@@ -2270,7 +2279,7 @@ a {
 		font-weight: bold;
 		font-family: 'Arial', 'din', sans-serif;
 		white-space: nowrap;
-		padding: 21px 16px 19px;
+		padding: 21px 16px;
 	}
 
 	&__img {
@@ -2641,7 +2650,7 @@ a {
 		padding-right: 0;
 		text-align: center;
 		font-size: 20px;
-		padding: 11px 25px 14px;
+		padding: 14px 25px;
 	}
 
 	iframe {

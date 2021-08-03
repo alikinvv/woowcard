@@ -438,6 +438,9 @@ a {
 		border-radius: 50%;
 		transition: $trans;
 		flex-shrink: 0;
+		appearance: none;
+		padding: 0 !important;
+		margin: 0 !important;
 	}
 }
 

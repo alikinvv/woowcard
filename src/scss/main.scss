@@ -1118,7 +1118,7 @@ a {
 			user-select: none;
 
 			.player__img,
-			.player__desc li:not(.player__price) {
+			.player__desc li:not(.player__price) {				
 				opacity: .5;
 			}
 		}
@@ -1794,6 +1794,10 @@ a {
 
 			.cart__info,
 			.cart__img {
+				@include r(767) {
+					opacity: .2;
+				}
+				
 				opacity: 0.5;
 			}
 
@@ -1861,6 +1865,12 @@ a {
 	}
 
 	&__restore {
+		@include r(767) {
+			right: initial;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+		}
+
 		@include centerYa;
 		right: 30px;
 		opacity: 0;

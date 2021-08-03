@@ -90,6 +90,7 @@ input[type="password"],
 input[type="text"] {
 	@include r(767) {
 		padding: 10px 20px;
+		appearance: none;
 	}
 
 	width: 100%;

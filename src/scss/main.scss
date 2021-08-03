@@ -238,6 +238,29 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.select {
+	position: relative;
+
+	&::before {
+		content: '';
+		@include centerYa;
+		right: 10px;
+		background: url('../img/icons/dropdown-black.svg') no-repeat;
+		background-size: contain;
+		width: 10px;
+		height: 10px;
+	}
+
+	select {
+		appearance: none;
+	}
+
+	& + .flex,
+	& + input {
+		margin-top: 15px;
+	}
+}
+
 .form-group {
 	&.flex {
 		@include fcsb;

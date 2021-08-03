@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <a href="/" class="header__logo"><img src="img/logo.png" alt=""></a>
+        <div class="header__menu menu">
+            <a href="javascript:void(0)">О нас</a>
+            <a href="javascript:void(0)">Блог</a>
+            <a href="javascript:void(0)">Как заказать?</a>
+            <a href="javascript:void(0)">Доставка и оплата</a>
+            <a href="javascript:void(0)">FAQ</a>
+            <a href="javascript:void(0)">Контакты</a>
+        </div>
+        <div class="header__controls">
+            <a href="javascript:void(0)" class="btn btn-black"><img src="img/icons/login.svg" alt=""> Святослав Белов</a>
+            <div class="header__cart">
+                <div class="header__time">09:57</div>
+                <div>
+                    <img src="img/icons/cart.svg" alt="">
+                    <div class="header__cart-count">22</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="submenu">
+    <div class="container">
+        <a href="javascript:void(0)">Хоккей</a>
+        <a href="javascript:void(0)">Футбол</a>
+        <a href="javascript:void(0)">Теннис</a>
+        <a href="javascript:void(0)">Космос</a>
+        <a href="javascript:void(0)">World of Tanks</a>
+        <a href="javascript:void(0)">Ещё <svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-dropdown"></use></svg></a>
+    </div>
+</section>
+
+<section class="topbar">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="/">Главная</a>
+            <a href="javascript:void(0)">Путь 1</a>
+            <a href="javascript:void(0)">Путь 2</a>
+        </div>
+        <form class="search" action="">
+            <button><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-search"></use></svg></button>
+            <input type="text" placeholder="Поиск">
+        </form>
+    </div>
+</section>
+
+<section class="cart">
+    <div class="container">
+        
+        <div class="sidebar-wrapper">
+            <div class="sidebar small">
+                <h2>Личный кабинет</h2>
+
+                <div class="block">
+                    <div class="block__header">
+                        <div class="block__title">Аккаунт</div>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-black">Личные данные</a>
+                </div>
+                <div class="block">
+                    <div class="block__header">
+                        <div class="block__title">Мои заказы</div>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-black">Заказы в работе</a>
+                    <a href="javascript:void(0)" class="btn btn-black">История заказов</a>
+                </div>
+            </div>
+            <div class="column">
+                <h3 class="column__title">Личные данные</h3>
+
+                <h3>Регистрационные данные</h3>
+
+                <div class="form-group line">
+                    <label for="">Имя</label>
+                    <input type="text" value="Святослав">
+                </div>
+                <div class="form-group line">
+                    <label for="">Фамилия</label>
+                    <input type="text" value="Белов">
+                </div>
+                <div class="form-group line">
+                    <label for="">E-mail</label>
+                    <input disabled type="text" value="name@yandex.ru">
+                </div>
+                <div class="form-group line">
+                    <label for="">Телефон</label>
+                    <input type="text" value="+7 916 777 77 77" id="phone-mask">
+                </div>
+
+                <h3>Адрес доставки</h3>
+                <div class="form-group line">
+                    <label for="">Край / область</label>
+                    <input type="text" value="Москва">
+                </div>
+                <div class="form-group line">
+                    <label for="">Город</label>
+                    <input type="text" value="Москва">
+                </div>
+                <div class="form-group line">
+                    <label for="">Почтовый индекс</label>
+                    <input type="text" value="109431">
+                </div>
+                <div class="form-group line">
+                    <label for="">Улица</label>
+                    <input type="text" value="Пушкинская">
+                </div>
+                <div class="form-group line">
+                    <label for=""></label>
+                    
+                    <div class="form-group line">
+                        <label for="">Дом</label>
+                        <input type="text" value="22">
+                    </div>
+                    <div class="form-group line">
+                        <label for="">Корпус</label>
+                        <input type="text" value="2">
+                    </div>
+                    <div class="form-group line">
+                        <label for="">Квартира</label>
+                        <input type="text" value="20">
+                    </div>
+                </div>
+                <button class="btn btn-red">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END CONTENT  -->
+//= template/footer.html

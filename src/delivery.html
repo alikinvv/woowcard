@@ -1,0 +1,159 @@
+//= template/header.html
+<!-- START CONTENT  -->
+<section class="topbar">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="/">Главная</a>
+            <a href="javascript:void(0)">Путь 1</a>
+            <a href="javascript:void(0)">Путь 2</a>
+        </div>
+        <form class="search" action="">
+            <button><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-search"></use></svg></button>
+            <input type="text" placeholder="Поиск">
+        </form>
+    </div>
+</section>
+
+<section class="cart">
+    <div class="container">
+        <h2>Оформление заказа</h2>
+        
+        <div class="sidebar-wrapper">
+            <div class="column">
+                <h3>Ваши контактные данные</h3>
+                <div class="cart__desc">Сопровождающий текст</div>
+
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Фамилия">
+                <input type="text" placeholder="Ваш E-mail">
+                <input type="text" placeholder="Телефон" id="phone-mask">
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" checked id="c1">
+                    <label for="c1">Текст сопровождающий чекбокс об автоматическом создании учетной записи</label>
+                </div>
+
+                <h3>Выберите способ получения</h3>
+
+                <div class="form-group radio">
+                    <input type="radio" checked name="r1" id="pickup">
+                    <label for="pickup">Самовывоз</label>
+                </div>
+
+                <div class="form-group radio">
+                    <input type="radio" name="r1" id="delivery">
+                    <label for="delivery">Доставка</label>
+                </div>
+
+                <div class="cart__hidden pickup active">
+                    <div class="block">
+                        <div data-simplebar>
+                            <div class="form-group radio">
+                                <input type="radio" checked name="r2" id="r1">
+                                <label for="r1">Реинвест-сервис <br> <span>г. Москва, ул. Щелковское шоссе, <br> 100к1, бизнес центр “East Gate”</span> <br> <span>+7 495 663 32 26</span></label>
+                            </div>
+                            <div class="form-group radio">
+                                <input type="radio" name="r2" id="r2">
+                                <label for="r2">Реинвест-сервис <br> <span>г. Москва, ул. Щелковское шоссе, <br> 100к1, бизнес центр “East Gate”</span> <br> <span>+7 495 663 32 26</span></label>
+                            </div>
+                            <div class="form-group radio">
+                                <input type="radio" name="r2" id="r3">
+                                <label for="r3">Реинвест-сервис <br> <span>г. Москва, ул. Щелковское шоссе, <br> 100к1, бизнес центр “East Gate”</span> <br> <span>+7 495 663 32 26</span></label>
+                            </div>
+                            <div class="form-group radio">
+                                <input type="radio" name="r2" id="r4">
+                                <label for="r4">Реинвест-сервис <br> <span>г. Москва, ул. Щелковское шоссе, <br> 100к1, бизнес центр “East Gate”</span> <br> <span>+7 495 663 32 26</span></label>
+                            </div>
+                            <div class="form-group radio">
+                                <input type="radio" name="r2" id="r5">
+                                <label for="r5">Реинвест-сервис <br> <span>г. Москва, ул. Щелковское шоссе, <br> 100к1, бизнес центр “East Gate”</span> <br> <span>+7 495 663 32 26</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block pickup__map">
+                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.836493%2C55.810497&utm_medium=mapframe&utm_source=maps&z=15" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUieRvMTB" width="100%" height="329" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+                </div>
+
+                <div class="cart__hidden delivery">
+                    <h3>Укажите адрес доставки</h3>
+                    <div class="cart__desc">Сопровождающий текст</div>
+
+                    <input type="text" placeholder="Край / область">
+                    <input type="text" placeholder="Город">
+                    <input type="text" placeholder="Почтовый индекс">
+                    <input type="text" placeholder="Улица">
+
+                    <div class="form-group flex">
+                        <input type="text" placeholder="Дом">
+                        <input type="text" placeholder="Корпус">
+                        <input type="text" placeholder="Квартира">
+                    </div>
+                </div>
+
+                <h3>Комментарий к заказу</h3>
+
+                <div class="cart__desc">Сообщите если у Вас есть особые пожелания</div>
+
+                <textarea placeholder="Начните писать текст"></textarea>
+            </div>
+            <div class="sidebar">
+                <div class="block">
+                    <div class="block__header">
+                        <div class="block__title">Корзина очистится через:</div>
+                        <div class="block__time">09:57</div>
+                    </div>
+                    <div class="block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor ut nisi gravida faucibus mauris, in sagittis aliquam neque. Sed massa at euismod ac massa morbi neque condimentum. Nulla pellentesque quis.</div>
+                </div>
+                <div class="block">
+                    <div class="block__title">Состав заказа</div>
+
+                    <div class="block__list">
+                        <div class="block__list-item">
+                            <div>
+                                <div class="block__name">Артём Дзюба</div>
+                                <div class="block__text">Футбол / ФК Зенит / Сезон 2021-2022</div>
+                            </div>
+                            <div>1</div>
+                            <div>600 ₽</div>
+                        </div>
+                        <div class="block__list-item">
+                            <div>
+                                <div class="block__name">Артём Дзюба</div>
+                                <div class="block__text">Футбол / ФК Зенит / Сезон 2021-2022</div>
+                            </div>
+                            <div>1</div>
+                            <div>600 ₽</div>
+                        </div>
+                        <div class="block__list-item">
+                            <div>
+                                <div class="block__name">Артём Дзюба</div>
+                                <div class="block__text">Футбол / ФК Зенит / Сезон 2021-2022</div>
+                            </div>
+                            <div>1</div>
+                            <div>600 ₽</div>
+                        </div>
+                    </div>
+
+                    <div class="block__list-item">
+                        <div>
+                            <div class="block__name">Итого:</div>
+                        </div>
+                        <div>1 800 ₽</div>
+                    </div>
+                    <div class="block__tip">Чтобы изменить состав заказа - <a href="javascript:void(0)">вернитесь в Корзину</a></div>
+                </div>
+                <div class="block sticky">
+                    <div class="block__header">
+                        <div class="block__title">Итого:</div>
+                        <div class="block__price">600 ₽</div>
+                    </div>
+                    <a href="javascript:void(0)" class="btn btn-red">Оформить заказ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END CONTENT  -->
+//= template/footer.html

@@ -7,7 +7,7 @@ $('.main__slider').slick({
 
 // cards hover
 $('body').on('mouseenter', '.card__item', (e) => {
-    if ($(window).width >= 1024) {
+    if ($(window).width() >= 1024) {
         $(e.currentTarget).find('.card__hidden').slideDown(300);
         $(e.currentTarget).find('.card__text').addClass('show');
         $(e.currentTarget).addClass('show');
@@ -16,7 +16,7 @@ $('body').on('mouseenter', '.card__item', (e) => {
 });
 
 $('body').on('mouseleave', '.card__item', (e) => {
-    if ($(window).width >= 1024) {
+    if ($(window).width() >= 1024) {
         $(e.currentTarget).find('.card__hidden').slideUp(300);
         $(e.currentTarget).find('.card__text').removeClass('show');
         $(e.currentTarget).removeClass('show');
